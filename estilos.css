@@ -213,6 +213,7 @@ h1{
     
     border: 6px solid #00F2FF;
 }
+
 .Menu{
     margin-left: 20px;
     margin-right: 20px;
@@ -228,6 +229,7 @@ h1{
     font-size: 30px;
     display: flex;   
 }
+
 #Github{
     color: #00F2FF;
     transition: color 0.3s ease;
@@ -258,4 +260,74 @@ h1{
     padding: 20px;
     gap: 15px;
     display: flex;
+}
+
+/* --- ESTILOS PARA EL FORMULARIO DE CONTACTO --- */
+
+/* Contenedor del formulario */
+#Contact form {
+    width: 90%; /* Ocupa el 90% del contenedor .Menu */
+    margin: auto;
+}
+
+/* Estilo para el título "Escribeme!!" */
+#Contact legend {
+    color: #00F2FF; /* Color cian neón */
+    font-size: 1.8em; /* Más grande */
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo para las etiquetas (Nombre, Correo, etc.) */
+#Contact label {
+    color: #00F2FF; /* Color cian neón */
+    font-size: 1.1em;
+    display: block; /* Hace que ocupe su propia línea */
+    margin-bottom: 5px;
+}
+
+/* Estilo para los campos de texto y el área de texto */
+#Contact input[type="text"],
+#Contact textarea {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    padding: 12px;
+    margin-bottom: 15px; /* Espacio debajo de cada campo */
+    background-color: #3A3F4D; /* Un gris oscuro, un poco más claro que el fondo */
+    border: 2px solid #00F2FF; /* Borde cian */
+    border-radius: 5px;
+    color: #FFFFFF; /* Color del texto que escribes */
+    font-family: "Roboto", sans-serif; /* Misma fuente que el body */
+    font-size: 1em;
+    box-sizing: border-box; /* Importante para que el padding no rompa el ancho */
+}
+
+/* Estilo para el botón "Enviar" */
+#Contact input[type="submit"] {
+    /* Copiamos los estilos de tus otros botones (a) */
+    padding: 14px 20px;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0); /* Fondo transparente */
+    color: #00F2FF; /* Color cian */
+    font-size: x-large;
+    border-radius: 5px;
+    border: 2px solid #00F2FF; /* Borde cian (lo añadí) */
+    transition: 0.3s;
+    cursor: pointer;
+    width: 100%; /* Opcional: para que ocupe todo el ancho */
+}
+
+/* Efecto hover para el botón "Enviar" */
+#Contact input[type="submit"]:hover {
+    border-color: #FF6732;
+    background-color: #00F2FF; /* Fondo cian */
+    color: #FF6732; /* Texto naranja */
+}
+
+/* Efecto active para el botón "Enviar" */
+#Contact input[type="submit"]:active {
+    border-color: #00F2FF;
+    background-color: #FF6732; /* Fondo naranja */
+    color: #00F2FF; /* Texto cian */
+    transition: 0.1s;
 }
